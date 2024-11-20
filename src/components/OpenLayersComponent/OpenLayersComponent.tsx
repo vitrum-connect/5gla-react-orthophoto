@@ -27,7 +27,7 @@ export default function OpenLayersComponent({ id }: Props) {
             }),
         });
         return () => map.setTarget(undefined)
-    }, []);
+    });
 
     return (<div id={id} className="map"></div>);
 }
